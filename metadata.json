@@ -1,0 +1,6 @@
+{
+  "name": "Jigsi Karia Mega Matrix Gateway",
+  "description": "A secure OSINT gateway and search engine hub styled with a matrix code rain theme.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

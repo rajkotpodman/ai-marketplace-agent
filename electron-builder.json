@@ -1,0 +1,43 @@
+{
+  "appId": "com.jigsikaria.matrixgateway",
+  "productName": "Jigsi Karia Mega Matrix Gateway",
+  "directories": {
+    "output": "release"
+  },
+  "files": [
+    "dist/**/*",
+    "electron/**/*",
+    "package.json"
+  ],
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": [
+          "x64"
+        ]
+      }
+    ],
+    "icon": "electron/assets/icon.ico"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "runAfterFinish": true
+  },
+  "linux": {
+    "target": [
+      "deb"
+    ],
+    "category": "Security",
+    "icon": "electron/assets/icon.png"
+  },
+  "deb": {
+    "depends": [
+      "libnotify4",
+      "libnss3"
+    ]
+  }
+}
