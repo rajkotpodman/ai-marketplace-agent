@@ -13,6 +13,7 @@
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
     "build": "vite build",
+    "start": "serve -s dist",
     "preview": "vite preview",
     "clean": "rm -rf dist server.js release",
     "lint": "tsc --noEmit",
@@ -35,6 +36,7 @@
     "motion": "^12.23.24",
     "react": "^19.0.1",
     "react-dom": "^19.0.1",
+    "serve": "^14.2.4",
     "vite": "^6.2.3",
     "vite-plugin-pwa": "^1.3.0"
   },
@@ -47,8 +49,7 @@
     "esbuild": "^0.25.0",
     "tailwindcss": "^4.1.14",
     "tsx": "^4.21.0",
-    "typescript": "~5.8.2",
-    "vite": "^6.2.3"
+    "typescript": "~5.8.2"
   },
   "build": {
     "appId": "com.jignesh.terminator",
@@ -57,18 +58,7 @@
       "output": "release"
     },
     "linux": {
-      "target": [
-        "deb",
-        "AppImage"
-      ],
-      "maintainer": "india9898048483@gmail.com",
-      "category": "Development"
-    },
-    "win": {
-      "target": [
-        "nsis",
-        "portable"
-      ]
+      "target": ["deb"]
     }
   }
 }
